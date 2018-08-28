@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'x!)+jwu(it%2el8)qrw7!8qy*d1_yn68vk@cp9l#n#1@2ij98@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['47.93.13.165']
 
 
 # Application definition
@@ -120,3 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static') #静态文件将要放的位置
+STATICFILES_DIRS = [(
+   os.path.join(BASE_DIR, "blog/static/")  #静态文件获取的位置
+)]
