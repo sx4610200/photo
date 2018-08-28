@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'x!)+jwu(it%2el8)qrw7!8qy*d1_yn68vk@cp9l#n#1@2ij98@'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['47.93.13.165']
+ALLOWED_HOSTS = ['47.93.13.165','127.0.0.1']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'vita',
 ]
 
 MIDDLEWARE = [
